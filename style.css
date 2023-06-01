@@ -30,7 +30,6 @@ div {
   padding: 30px;
 }
 
-/* #image */
 .circle {
   width: 300px;
   height: 300px;
@@ -66,7 +65,6 @@ div {
   padding: 0;
 }
 
-
 body {
   display: block;
   background-color: #1E1E1E;
@@ -76,15 +74,32 @@ body {
   line-height: 1.5;
 }
 
-.list-inline li{
+.list-inline li {
   display: inline;
   padding: 0
 }
 
-.list-inline{
+.list-inline {
   padding: 0
 }
 
-/* a{
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
 
-} */
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
